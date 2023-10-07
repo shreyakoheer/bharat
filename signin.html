@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto',sans-serif;
+        background: #000;
+     }   
+     .main{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            overflow:hidden;
+            opacity:0.4;
+     }
+     .container{
+        position: absolute;
+        margin-left: 36%;
+        margin-top: 1%;
+        width: 440px;
+        height: 590px;
+        background-color: #000;
+     }
+     .container h1{
+        color:white;
+        margin-top: 60px;
+        margin-left: 50px;
+
+     }
+     input{
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 320px;
+        height: 47px;
+        background-color: #fff;
+        border-radius: 3px;
+        border: none;
+        font-size: 20px;
+    }
+      input::placeholder{
+        font-size: 17px;
+        margin-left: 15px;
+        padding: 12px;
+
+      } 
+      input[type=submit] {
+        width:320px;
+        height:45px;
+        background-color: red;
+        color: #fff;
+        border-radius: 3px;
+        cursor:pointer;
+      }
+      .logo{
+            width: 200px;
+        }
+        .logo>img{
+            max-width: 100%;
+            opacity: 0.9;
+        }
+        input[type=checkbox]{
+            width: 25px;
+            height: 18px;
+            border-radius: 5px;
+        }
+        label{
+            color: rgba(125, 119, 119);
+        }
+        .form a{
+            float: right;
+            margin-top: 24px;
+            margin-right: 64px;
+            color: rgba(125, 119, 119);
+            text-decoration: none;
+        }
+
+
+        .content{
+
+            margin-top: 80px;
+            margin-left: 55px;
+            font-size: 9px;
+            position: absolute;
+
+        }
+        .content h2{
+            color: rgba(125, 119, 119);
+        }
+        .container a{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="main">
+        <img class="bgimage" src="Netflix-background.jpg">
+    </div>
+    <div class="logo">
+        <img src="/images/logonet.jpg">
+    </div>
+    <div class="container">
+        <h1>Sign In</h1>
+        <div class="form">
+            <input type="email" placeholder="Email or Phone Number">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Sign In">
+            <input type="checkbox">
+            <label>Remember me</label>
+
+        <a href="#">  Need help?</a>
+        </div><br>
+    <div class="content">
+    <h2>New to Netflix? <a href="#">Sign up now</a></h2><br>
+    <h2>
+        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        <a href="#">Learn more.</a></h2>
+    </div>
+    </div>
+</body>
+</html>

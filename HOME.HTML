@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100vh;
+            background: #000;
+        }
+        body::-webkit-scrollbar{
+            display:none;
+
+
+        }
+        h1,h2,h3,h4,h5,h6,p{
+            padding:0;
+            margin:0;
+        }
+        .main{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            overflow:hidden;
+            opacity:0.2;
+
+        }
+        .container{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+        }
+        .navbar{
+            padding: 30px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            width: 200px;
+        }
+        .logo>img{
+            max-width: 100%;
+        }
+        .signin{
+            color: #fff;
+            cursor: pointer;
+            background:red;
+            max-height: max-content;
+            max-width: max-content;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .subcontainer{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            color: #fff;
+        }
+        h1{
+            font-size: 40px;
+
+        }
+        input{
+            background: #00000084;
+            border: solid gray;
+            color: #fff;
+            width: 400px;
+            padding: 10px;
+            font-size: 20px;
+            outline: none;
+        }
+        button{
+            background: red;
+            border: solid red;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .container a{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <img class="bgimage" src="Netflix-background.jpg">
+    </div>
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="logonet.png">
+        </div>
+        <div class="signin"><a href="signin.html">Sign In</a></div>
+    </div>
+    <div class="subcontainer">
+        <h1>Unlimited Movies,TV Shows,and more</h1>
+        <h4>Plans now start at USD 2.99/month.</h4>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <form>
+            <input type="text" value="Enter address">
+            <button>Get Started ></button>
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>
